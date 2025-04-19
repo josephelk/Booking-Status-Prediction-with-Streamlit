@@ -70,12 +70,32 @@ def main():
 
     user_data = user_input_form()
 
+    # if user_data:
+    #     result = predict_booking_status(user_data)
+    #     if result == 1:
+    #         st.success("Your booking is likely to be Canceled.")
+    #     else: 
+    #         st.success("Your booking is likely to be Not Canceled.")
+
+
     if user_data:
-        result = predict_booking_status(user_data)
-        if result == 1:
-            st.success("Your booking is likely to be Canceled.")
-        else: 
-            st.success("Your booking is likely to be Not Canceled.")
+            result = predict_booking_status(user_data)
+            if result == 1:
+                st.markdown(
+                    f"<div style='background-color: #ff4d4d; padding: 10px; border-radius: 5px; color: white;'>"
+                    f"❌ Your booking is likely to be <strong>CANCELED</strong>."
+                    f"</div>",
+                    unsafe_allow_html=True
+                )
+            else:
+                st.markdown(
+                    f"<div style='background-color: #28a745; padding: 10px; border-radius: 5px; color: white;'>"
+                    f"✅ Your booking is likely to be <strong>NOT CANCELED</strong>."
+                    f"</div>",
+                    unsafe_allow_html=True
+                )
+
+
             
 if __name__ == "__main__":
     main()
