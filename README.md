@@ -6,7 +6,7 @@ Predict the booking status: whether a booking is canceled or not.
 
 ## Demo App
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://app-starter-kit.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]([https://app-starter-kit.streamlit.app/](https://utsjoseph2702224282-5dbamg25t8cw9src2cfod6.streamlit.app/#hotel-booking-cancellation-prediction))
 
 ## GitHub Codespaces
 
