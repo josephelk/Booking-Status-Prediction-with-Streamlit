@@ -1,8 +1,8 @@
 # Booking Status Prediction App
 ```
-
-```
 Predict the booking status: whether a booking is canceled or not.
+```
+
 
 ## Demo App
 
